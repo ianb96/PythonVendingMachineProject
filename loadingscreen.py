@@ -19,13 +19,13 @@ def LoadingScreen():
     lodScrens.append(Image(Point(200,200),"Waitscreen12.png"))
     lodScrens.append(Image(Point(200,200),"Waitscreen13.png"))
     lodScrens.append(Image(Point(200,200),"Waitscreen14.png"))
-    while  b != 5:
+    while  b != 4:
         for i in range(len(lodScrens)):
             lodScrens[i].draw(win)
             if i >= 1:
                 lodScrens[i-1].undraw()
             time.sleep(0.1)
-        time.sleep(1)
+        time.sleep(0.1)
         b += 1
         lodScrens[i].undraw()
 
